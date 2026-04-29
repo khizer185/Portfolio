@@ -15,12 +15,105 @@
 body {
   font-family: "Poppins", san-serif;
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  margin: 0 4rem;
 }
 
-h1 {
-  color: var(--black);
-  
+/* navbar start */
+
+nav {
+  /* border: 0.2rem solid var(--black); */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 2rem; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 1rem;
 }
+
+nav h3 {
+  color: var(--black);
+  margin-left: 2rem;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 2rem;
+
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1rem;
+  /* font-size:3vw; */
+  font-weight: 500;
+  padding: 0.5rem;
+  transition:all 0.3s ease;
+  border-radius: 0.3rem;
+
+}
+
+nav ul li a:hover {
+  color: var(--light-green);
+  background-color: var(--black);
+}
+
+/* for mobile screens */
+
+@media screen and (max-width: 600px) {
+
+ 
+  nav ul{
+    position: fixed;
+    top: 10vh;
+    /* left:-100%; */
+    /* border: 0.2rem solid; */
+    /* height: 60vh; */
+    height: fit-content;
+    width:100%;
+    background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  flex-direction: column;
+  margin-left: 0;
+  align-items: center;
+  transition: all 0.3s ease;
+  
+  }
+
+  nav ul li{
+    margin:  1rem 0;
+  }
+
+  #click:checked ~ ul{
+    top:-365%;
+  }
+}
+
+/* for tablet screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+/* navbar end */
+
+
 
 /* .box {
  
