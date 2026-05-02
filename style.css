@@ -51,7 +51,6 @@ nav ul {
   display: flex;
   list-style: none;
   margin-left: 2rem;
-
 }
 
 nav ul li {
@@ -64,9 +63,8 @@ nav ul li a {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 0.3rem;
-
 }
 
 nav ul li a:hover {
@@ -78,17 +76,17 @@ nav label .menu-btn {
   display: none;
   width: 1.3rem;
   height: 1.3rem;
-} 
+}
 
 nav label .cancel-btn {
   display: none;
   width: 1.3rem;
   height: 1.3rem;
-} 
+}
 
- nav input#click {
-    display: none;
-  }
+nav input#click {
+  display: none;
+}
 
 /* for mobile screens */
 
@@ -161,7 +159,6 @@ nav label .cancel-btn {
 
 /* for tablet screens */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
   nav {
     position: relative;
     height: auto;
@@ -227,7 +224,92 @@ nav label .cancel-btn {
 }
 /* navbar end */
 
+/* hero start */
 
+#hero {
+  width: 100%;
+  min-height: 26rem;
+  margin-top: 1rem;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#hero .left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero .left h1 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+#hero .left h1 span {
+  color: var(--light-green);
+  text-shadow:
+    -1px -1px 0 var(--black),
+    1px -1px 0 var(--black),
+    -1px 1px 0 var(--black),
+    1px 1px 0 var(--black);
+}
+
+#hero .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .right img {
+  width: 20rem;
+  height: 20rem;
+}
+
+@media screen and (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  #hero .left {
+    width: 100%;
+  }
+
+  #hero .left h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  #hero .right {
+    width: 100%;
+  }
+
+  #hero .right img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #hero .right img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  #hero .left h1 {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+}
+
+/* hero end */
 
 /* .box {
  
