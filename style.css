@@ -316,8 +316,8 @@ nav input#click {
 #skills {
   width: 100%;
   min-height: 30rem;
-  /* border: 0.2rem solid var(--black); */
   margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .section-title {
@@ -364,7 +364,6 @@ nav input#click {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/*   */
 
 .skill .skill-logo {
   border-radius: 50%;
@@ -398,7 +397,7 @@ nav input#click {
   width: 3.5rem;
   height: 3.5rem;
 }
-/*  */
+/* till here */
 
 /* skills end */
 
