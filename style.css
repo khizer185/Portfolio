@@ -36,7 +36,7 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 1rem;
   position: sticky;
-  top: 0;
+  top: 1rem;
   z-index: 100;
 }
 
@@ -310,6 +310,101 @@ nav input#click {
 }
 
 /* hero end */
+
+/* skills start */
+
+#skills {
+  width: 100%;
+  min-height: 30rem;
+  /* border: 0.2rem solid var(--black); */
+  margin-top: 3rem;
+}
+
+.section-title {
+  color: var(--black);
+  width: 12rem;
+  height: 3rem;
+  margin: 4rem auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-skills {
+  width: 70%;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.all-skills .skill {
+  width: 8rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*   */
+
+.skill .skill-logo {
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*  */
+  background: rgba(255, 255, 255, 0.4);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border: 0.2rem solid var(--green); */
+}
+
+.skill-logo img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.skill .skill-name {
+  color: var(--black);
+  margin-top: 0.6rem;
+}
+
+/* solve large icons problem with these lines of css */
+.skill .large-logo {
+  padding: 1rem;
+}
+
+.large-logo .large-img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+/*  */
+
+/* skills end */
 
 /* .box {
  
