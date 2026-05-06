@@ -21,7 +21,6 @@ body {
 /* navbar start */
 
 nav {
-  
   width: 100%;
   height: 10vh;
   display: flex;
@@ -91,8 +90,8 @@ nav input#click {
 
 @media screen and (max-width: 600px) {
   nav {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     z-index: 100;
     height: auto;
     padding: 1rem 1.5rem;
@@ -363,7 +362,6 @@ nav input#click {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-
 .skill .skill-logo {
   border-radius: 50%;
   padding: 0.5rem;
@@ -402,15 +400,158 @@ nav input#click {
 
 /* work start */
 
+#work {
+  width: 100%;
+  min-height: 40rem;
+  
+}
 
+#work a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+#work .projects {
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.projects .project-link {
+  width: 25rem;
+  height: 17rem;
+  text-decoration: none;
+}
+
+.projects .project-link .project {
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid var(--black);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project .image-part {
+  
+  height: 80%;
+
+}
+
+.image-part img {
+  width: 100%;
+  height: 100%;
+}
+
+.project .title-part {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-part h4 {
+  color: var(--black);
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.title-part h4 span {
+  color: var(--light-green);
+  text-shadow:
+    -1px -1px 0 var(--black),
+    1px -1px 0 var(--black),
+    -1px 1px 0 var(--black),
+    1px 1px 0 var(--black);
+  display: none;
+}
+
+.project:hover .title-part h4 span {
+  display: inline;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project:hover .image-part img {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* button */
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: poppins, "sans-serif";
+  transition: all 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  border: 0.1rem solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--yellow);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 4rem auto 1rem auto;
+}
+
+button:hover {
+  background: var(--light-green);
+  color: var(--black);
+}
+
+button > svg {
+  width: 2.4rem;
+  margin-left: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(0.5rem);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* button */
+
+@media screen and (max-width: 600px) {
+  .projects .project-link {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .title-part h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* object-fit: contain;
+  object-position: center; */
 
 /* tribute page = https://codepen.io/kstriker/pen/GRvQmRb */
 /* form = https://codepen.io/kstriker/pen/GRrzLQj */
 /* js docs = https://codepen.io/kstriker/pen/oNwEEWG */
 /* landing page = https://github.com/muhammad-khizer175/Nike-Landing-Page */
+/* netflix-clone = https://github.com/muhammad-khizer175/Netflix-clone */
 
 /* work end */
-
 
 /* .box {
  
