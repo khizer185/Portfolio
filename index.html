@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khizer's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav  data-aos="fade-right" >
       <h3>Muhammad Khizer</h3>
 
       <input type="checkbox" id="click" />
@@ -18,7 +19,7 @@
       </label>
 
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#hero">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -26,23 +27,23 @@
     </nav>
 
     <main>
-      <section id="hero">
-        <div class="left">
+      <section id="hero"  data-aos="fade-right" >
+        <div class="left" >
           <h1>
             Hey! I Am Muhammad Khizer a <br />
             <span class="auto-type"></span>
           </h1>
         </div>
 
-        <div class="right">
+        <div class="right" >
           <img src="./svgs/developer.svg" alt="" />
         </div>
       </section>
 
-      <section id="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="all-skills">
-          <div class="skill">
+      <section id="skills" >
+        <h2 class="section-title" data-aos="fade-right" >My Skills</h2>
+        <div class="all-skills"> 
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo">
               <img src="./svgs/skills svgs/html.svg" alt="" />
             </div>
@@ -51,7 +52,7 @@
             </div>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo">
               <img src="./svgs/skills svgs/css.svg" alt="" />
             </div>
@@ -60,7 +61,7 @@
             </div>
           </div>
 
-          <div class="skill">
+            <div class="skill" data-aos="fade-right">
             <div class="skill-logo large-logo">
               <img
                 class="large-img"
@@ -73,7 +74,7 @@
             </div>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo large-logo">
               <img
                 class="large-img"
@@ -86,7 +87,7 @@
             </div>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo">
               <img src="./svgs/skills svgs/react.svg" alt="" />
             </div>
@@ -95,7 +96,7 @@
             </div>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo">
               <img src="./svgs/skills svgs/node-js.svg" alt="" />
             </div>
@@ -103,7 +104,7 @@
               <h3>Node.js</h3>
             </div>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo large-logo">
               <img
                 class="large-img"
@@ -116,7 +117,7 @@
             </div>
           </div>
 
-          <div class="skill">
+          <div class="skill" data-aos="fade-right">
             <div class="skill-logo">
               <img src="./svgs/skills svgs/mongodb.svg" alt="" />
             </div>
@@ -128,12 +129,11 @@
       </section>
 
       <section id="work">
-
-      
-        <h2 class="section-title">My Work</h2>
+        <h2 class="section-title" data-aos="fade-right">My Work</h2>
 
         <div class="projects">
           <a
+            data-aos="fade-right"
             class="project-link"
             href="https://codepen.io/kstriker/pen/GRvQmRb"
             target="_blank"
@@ -149,6 +149,7 @@
           </a>
 
           <a
+            data-aos="fade-right"
             class="project-link"
             href="https://codepen.io/kstriker/pen/GRrzLQj"
             target="_blank"
@@ -164,6 +165,7 @@
           </a>
 
           <a
+            data-aos="fade-right"
             class="project-link"
             href="https://codepen.io/kstriker/pen/oNwEEWG"
             target="_blank"
@@ -179,6 +181,7 @@
           </a>
 
           <a
+            data-aos="fade-right"
             class="project-link"
             href="https://github.com/muhammad-khizer175/Nike-Landing-Page"
             target="_blank"
@@ -194,6 +197,7 @@
           </a>
 
           <a
+            data-aos="fade-right"
             class="project-link"
             href="https://github.com/muhammad-khizer175/Netflix-clone"
             target="_blank"
@@ -209,8 +213,8 @@
           </a>
         </div>
 
-        <a href="https://codepen.io/your-work" target="_blank">
-          <button class="show">
+        <a  href="https://codepen.io/your-work" target="_blank">
+          <button data-aos="fade-right" class="show">
             <span>Show all </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -236,26 +240,51 @@
       </section>
 
       <section id="contact">
-        <div class="left">
+        <div data-aos="fade-right" class="left">
           <h1>Lets work together...</h1>
           <p>How do you take your coffee?</p>
           <div class="contact-icons">
-            <a href=""><img src="./svgs/contact svgs/facebook.svg" alt=""></a>
-            <a href=""><img src="./svgs/contact svgs/github.svg" alt=""></a>
-            <a href=""><img src="./svgs/contact svgs/linkedin.svg" alt=""></a>
-            
+            <a href="https://www.facebook.com/share/17KRQqmHjr/"
+              ><img src="./svgs/contact svgs/facebook.svg" alt=""
+            /></a>
+            <a href="https://github.com/khizer185"
+              ><img src="./svgs/contact svgs/github.svg" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/muhammad-khizer-58144a226"
+              ><img src="./svgs/contact svgs/linkedin.svg" alt=""
+            /></a>
           </div>
         </div>
 
-        <div class="right">
-          <img src="./svgs/work.svg" alt="">
+        <div data-aos="fade-right" class="right">
+          <img src="./svgs/work.svg" alt="" />
         </div>
       </section>
-
-      
     </main>
 
+    <footer data-aos="fade-right">
+      <h3>Muhammad Khizer</h3>
+      <div class="links">
+        <a href="#hero">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/17KRQqmHjr/"
+          ><img src="./svgs/contact svgs/facebook.svg" alt=""
+        /></a>
+        <a href="https://github.com/khizer185"
+          ><img src="./svgs/contact svgs/github.svg" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/muhammad-khizer-58144a226"
+          ><img src="./svgs/contact svgs/linkedin.svg" alt=""
+        /></a>
+      </div>
+    </footer>
+ 
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

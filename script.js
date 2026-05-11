@@ -10,3 +10,12 @@
             backSpeed:150,
             loop:true
         })
+
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            delay:200,
+            once: true,
+
+            
+        });
